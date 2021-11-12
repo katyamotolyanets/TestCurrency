@@ -1,0 +1,5 @@
+pageobject_model\page\BasePage.class
+pageobject_model\page\CurrencyLoginPage.class
+pageobject_model\page\CurrencyTradingPlatformPage.class
+pageobject_model\page\CurrencyHomePage.class
+pageobject_model\page\CurrencyTradeTab.class
