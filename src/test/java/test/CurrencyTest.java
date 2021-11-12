@@ -21,7 +21,6 @@ public class CurrencyTest {
 
     @BeforeMethod(alwaysRun = true)
     public void browserSetup() {
-        System.setProperty("webdriver.chrome.driver", "E:\\seleniumDrivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         currencyTradingPlatformPagePage = new CurrencyHomePage(driver)
