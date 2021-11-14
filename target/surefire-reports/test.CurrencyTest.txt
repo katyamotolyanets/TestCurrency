@@ -1,19 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.CurrencyTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 35.236 s <<< FAILURE! - in test.CurrencyTest
-test.CurrencyTest.buyTokensOnCurrency  Time elapsed: 20.861 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: div[class='btn-menu']' (tried for 20 second(s) with 500 milliseconds interval)
-	at test.CurrencyTest.buyTokensOnCurrency(CurrencyTest.java:37)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"div[class='btn-menu']"}
-  (Session info: chrome=95.0.4638.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'KATYA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e0ebf2ac6d3faf93b090a732007515a4, findElement {using=css selector, value=div[class='btn-menu']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\katya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59361/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e0ebf2ac6d3faf93b090a732007515a4
-	at test.CurrencyTest.buyTokensOnCurrency(CurrencyTest.java:37)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.41 s - in test.CurrencyTest

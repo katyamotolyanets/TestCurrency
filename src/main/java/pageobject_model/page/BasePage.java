@@ -16,12 +16,12 @@ public abstract class BasePage {
     }
 
     protected static WebElement waitForElementToBeClickable(WebDriver driver, WebElement element) {
-        return new WebDriverWait(driver, 20)
+        return new WebDriverWait(driver, 30)
                 .until(ExpectedConditions.elementToBeClickable(element));
     }
 
     protected static WebElement waitForVisibilityOfElement(WebDriver driver, WebElement element) {
-        return new WebDriverWait(driver, 20)
+        return new WebDriverWait(driver, 30)
                 .until(ExpectedConditions.visibilityOf(element));
     }
 }

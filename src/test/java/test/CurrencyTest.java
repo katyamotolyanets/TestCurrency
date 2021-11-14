@@ -31,9 +31,10 @@ public class CurrencyTest {
                 .signIn();
     }
 
-    @Test(description = "Buy 10 tokens of Gold on Currency.com")
+    @Test(description = "Buy 10 tokens of Bitcoin / USD on Currency.com")
     public void buyTokensOnCurrency() {
         currencyTradeTab = currencyTradingPlatformPagePage.changeAccountToDemo()
+                    .switchToActivelyGrowingMarketsTab()
                     .clickBuyToken()
                     .enterQuantityOfTokensForBuying(quantity)
                     .confirmBuyingOfTokens();

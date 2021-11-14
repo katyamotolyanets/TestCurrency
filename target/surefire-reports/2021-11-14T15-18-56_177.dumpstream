@@ -1,0 +1,4 @@
+# Created at 2021-11-14T15:18:56.637
+Boot Manifest-JAR contains absolute paths in classpath 'D:\3 курс\epam\currency\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
