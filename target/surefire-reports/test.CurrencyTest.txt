@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: test.CurrencyTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.41 s - in test.CurrencyTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.973 s <<< FAILURE! - in test.CurrencyTest
+test.CurrencyTest.buyTokensOnCurrency  Time elapsed: 43.98 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='account-popup__box ng-star-inserted']/p[contains(text(), 'РџРµСЂРµР№С‚Рё РЅР° РґРµРјРѕ-Р°РєРєР°СѓРЅС‚')]' (tried for 30 second(s) with 500 milliseconds interval)
+	at test.CurrencyTest.buyTokensOnCurrency(CurrencyTest.java:36)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='account-popup__box ng-star-inserted']/p[contains(text(), 'РџРµСЂРµР№С‚Рё РЅР° РґРµРјРѕ-Р°РєРєР°СѓРЅС‚')]"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'KATYA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [465d6d88eb7809f349fe90d5e32d42e4, findElement {using=xpath, value=//div[@class='account-popup__box ng-star-inserted']/p[contains(text(), 'РџРµСЂРµР№С‚Рё РЅР° РґРµРјРѕ-Р°РєРєР°СѓРЅС‚')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\katya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51382/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 465d6d88eb7809f349fe90d5e32d42e4
+	at test.CurrencyTest.buyTokensOnCurrency(CurrencyTest.java:36)
+

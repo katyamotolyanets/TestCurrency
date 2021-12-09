@@ -1,21 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-14T15:27:35 MSK" name="Surefire suite" finished-at="2021-11-14T15:27:50 MSK" duration-ms="15081">
+  <suite name="Surefire suite" duration-ms="54462" started-at="2021-12-09T12:42:30 MSK" finished-at="2021-12-09T12:43:24 MSK">
     <groups>
     </groups>
-    <test started-at="2021-11-14T15:27:35 MSK" name="Surefire test" finished-at="2021-11-14T15:27:50 MSK" duration-ms="15081">
+    <test name="Surefire test" duration-ms="54462" started-at="2021-12-09T12:42:30 MSK" finished-at="2021-12-09T12:43:24 MSK">
       <class name="test.CurrencyTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.CurrencyTest@275710fc]" started-at="2021-11-14T15:27:35 MSK" name="browserSetup" finished-at="2021-11-14T15:27:40 MSK" duration-ms="5396" status="PASS">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:test.CurrencyTest@63e2203c]" name="browserSetup" is-config="true" duration-ms="9670" started-at="2021-12-09T12:42:30 MSK" finished-at="2021-12-09T12:42:39 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="buyTokensOnCurrency()[pri:0, instance:test.CurrencyTest@275710fc]" started-at="2021-11-14T15:27:40 MSK" name="buyTokensOnCurrency" description="Buy 10 tokens of Bitcoin / USD on Currency.com" finished-at="2021-11-14T15:27:50 MSK" duration-ms="9507" status="PASS">
+        <test-method status="FAIL" signature="buyTokensOnCurrency()[pri:0, instance:test.CurrencyTest@63e2203c]" name="buyTokensOnCurrency" duration-ms="44009" started-at="2021-12-09T12:42:39 MSK" description="Buy 10 tokens of Bitcoin / USD on Currency.com" finished-at="2021-12-09T12:43:23 MSK">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='account-popup__box ng-star-inserted']/p[contains(text(), 'РџРµСЂРµР№С‚Рё РЅР° РґРµРјРѕ-Р°РєРєР°СѓРЅС‚')]' (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='account-popup__box ng-star-inserted']/p[contains(text(), 'РџРµСЂРµР№С‚Рё РЅР° РґРµРјРѕ-Р°РєРєР°СѓРЅС‚')]' (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at pageobject_model.page.BasePage.waitForElementToBeClickable(BasePage.java:20)
+at pageobject_model.page.CurrencyTradingPlatformPage.changeAccountToDemo(CurrencyTradingPlatformPage.java:28)
+at test.CurrencyTest.buyTokensOnCurrency(CurrencyTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='account-popup__box ng-star-inserted']/p[contains(text(), 'РџРµСЂРµР№С‚Рё РЅР° РґРµРјРѕ-Р°РєРєР°СѓРЅС‚')]"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'KATYA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [465d6d88eb7809f349fe90d5e32d42e4, findElement {using=xpath, value=//div[@class='account-popup__box ng-star-inserted']/p[contains(text(), 'РџРµСЂРµР№С‚Рё РЅР° РґРµРјРѕ-Р°РєРєР°СѓРЅС‚')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\katya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51382/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 465d6d88eb7809f349fe90d5e32d42e4
+at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyTokensOnCurrency -->
-        <test-method is-config="true" signature="browserShutDown()[pri:0, instance:test.CurrencyTest@275710fc]" started-at="2021-11-14T15:27:50 MSK" name="browserShutDown" finished-at="2021-11-14T15:27:50 MSK" duration-ms="148" status="PASS">
+        <test-method status="PASS" signature="browserShutDown()[pri:0, instance:test.CurrencyTest@63e2203c]" name="browserShutDown" is-config="true" duration-ms="744" started-at="2021-12-09T12:43:24 MSK" finished-at="2021-12-09T12:43:24 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserShutDown -->
